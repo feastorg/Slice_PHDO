@@ -1,17 +1,12 @@
----
-title: "KiBot Outputs"
-description: "Index for KiBot-generated PCB artifacts."
-layout: "page"
----
+Slice PHDO KiBot Outputs
+============================
 
-These are the docs & KiBot Outputs for Slice PHDO
+Generated: 2026-11-27 at 21:39:53 UTC
 
-The following files were generated from the latest PCB build:
+## Artifacts
 
 - [Schematic.pdf](./Schematic.pdf)
 - [PCB.pdf](./PCB.pdf)
 - [kibot.log](./kibot.log)
 - [BREAD_Slice-bom.html](./BREAD_Slice-bom.html)
 - [BREAD_Slice-ibom.html](./BREAD_Slice-ibom.html)
-
-_Last updated automatically by KiBot via GitHub Actions._
