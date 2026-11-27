@@ -1,4 +1,4 @@
-# Atlas EZO Carrier (ACAR)
+# 2-Channel Atlas EZO Carrier (ACAR)
 
 A BREAD Slice that carries two Atlas Scientific EZO circuits, each on an
 Atlas Electrically Isolated EZO Carrier Board Gen 2. Any EZO circuit the

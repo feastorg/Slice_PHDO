@@ -5,7 +5,7 @@
 	(uuid "5c3b0a51-6f0e-4d57-9a43-2f3b6a3e1c01")
 	(paper "A4")
 	(title_block
-		(title "BREAD Slice / Atlas EZO Carrier / SLC_PHDO")
+		(title "BREAD Slice / 2-Channel Atlas EZO Carrier / SLC_PHDO")
 		(date "2026-11")
 		(rev "G3 r1")
 		(comment 1 "EZO channel: carrier socket, mode switch, line router")
