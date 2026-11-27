@@ -696,6 +696,14 @@
     [
       "66043bca-a260-4915-9fce-8a51d324c687",
       "Root"
+    ],
+    [
+      "a1c0e2d4-1b7f-4c2a-9e51-3d8f0a6b7c11",
+      "CH1"
+    ],
+    [
+      "a1c0e2d4-1b7f-4c2a-9e51-3d8f0a6b7c12",
+      "CH2"
     ]
   ],
   "text_variables": {}
