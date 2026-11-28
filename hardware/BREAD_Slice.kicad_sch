@@ -5744,7 +5744,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 50.8 181.61 0)
+			(at 46.355 184.785 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
