@@ -6277,7 +6277,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Module:Arduino_Nano"
+		(property "Footprint" "KMLib_Boards_Modules:Arduino_Nano_Headers"
 			(at 40.64 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -7176,7 +7176,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "22uF"
+		(property "Value" "22u 10V"
 			(at 44.45 106.6736 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7342,7 +7342,7 @@
 				)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "AP63205"
 			(at 31.75 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7352,7 +7352,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-6"
+		(property "Footprint" "KMLib_IC_SMD:SOIC_05WU-7_DIO"
 			(at 31.75 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -7832,7 +7832,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7uH"
+		(property "Value" "4.7uH Isat>=1.4A"
 			(at 43.18 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8323,7 +8323,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "22uF"
+		(property "Value" "22u 10V"
 			(at 54.61 106.6736 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8972,7 +8972,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22uF"
+		(property "Value" "10u 25V"
 			(at 25.4 67.3037 0)
 			(show_name no)
 			(do_not_autoplace no)
