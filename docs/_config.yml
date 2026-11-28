@@ -1,7 +1,7 @@
-title: Slice_PHDO
+title: Slice_ACAR_S2L
 description: >
-  A FEASTorg project page for Slice PHDO.
-baseurl: "/Slice_PHDO"
+  A FEASTorg project page for Slice ACAR S2L.
+baseurl: "/Slice_ACAR_S2L"
 url: "https://feastorg.github.io"
 
 remote_theme: pmarsceill/just-the-docs
@@ -39,7 +39,7 @@ defaults:
 
 just_the_docs:
   logo:
-    alt: "Slice PHDO"
+    alt: "Slice ACAR S2L"
   show_nav_level: 2
   collections:
     enable: false
