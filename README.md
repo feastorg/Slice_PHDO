@@ -9,6 +9,11 @@ and the probe's SMA connector.
 The repository keeps its original name, Slice_PHDO, from the 2022 pH and
 dissolved-oxygen board it grew out of.
 
+Each carrier is screwed flat on its own standoffs (A2, A3: four holes,
+no pins) and connects through the 5-wire Dupont cable it ships with, to a
+5-pin male header on the Slice (J3, J4). The header pins follow the
+carrier's own header: VCC, OFF, GND, TX/SDA, RX/SCL.
+
 > **Status:** schematic only (first revision, G3 r1). The board has not
 > been laid out, built or tested.
 

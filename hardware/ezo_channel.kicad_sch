@@ -8,7 +8,7 @@
 		(title "BREAD Slice / 2-Channel Atlas EZO Carrier / SLC_PHDO")
 		(date "2026-11")
 		(rev "G3 r1")
-		(comment 1 "EZO channel: carrier socket, mode switch, line router")
+		(comment 1 "EZO channel: carrier mount and cable header, mode switch, line router")
 	)
 	(lib_symbols
 		(symbol "Analog_Switch:TS5A23157DGS"
@@ -1050,7 +1050,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "KMLib_Connectors:Hole_Mounted_Conn_01x05_Female"
+		(symbol "Connector:Conn_01x05_Pin"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -1060,29 +1060,27 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J8"
-				(at 1.27 1.2701 0)
+			(property "Reference" "J"
+				(at 0 7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "Hole_Mounted_Conn_01x05_Female"
-				(at 1.27 -1.2699 0)
+			(property "Value" "Conn_01x05_Pin"
+				(at 0 -7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Footprint" "KMLib_Connectors:Hole_Mounted_24mmx34mm_PinHeader_1x05_P2.54mm_Vertical"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1104,11 +1102,21 @@
 					)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "Generic connector, single row, 01x05, script generated"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1137,68 +1145,65 @@
 					)
 				)
 			)
-			(symbol "Hole_Mounted_Conn_01x05_Female_0_1"
-				(circle
-					(center -2.794 -8.128)
-					(radius 1.27)
-					(stroke
-						(width 1.27)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -2.54 9.144)
-					(radius 1.27)
-					(stroke
-						(width 1.27)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 4.318 -8.128)
-					(radius 1.27)
-					(stroke
-						(width 1.27)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 5.08 9.144)
-					(radius 1.27)
-					(stroke
-						(width 1.27)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Hole_Mounted_Conn_01x05_Female_1_1"
-				(polyline
-					(pts
-						(xy -1.27 5.08) (xy -0.508 5.08)
-					)
+			(symbol "Conn_01x05_Pin_1_1"
+				(rectangle
+					(start 0.8636 5.207)
+					(end 0 4.953)
 					(stroke
 						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
 					)
 				)
 				(polyline
 					(pts
-						(xy -1.27 2.54) (xy -0.508 2.54)
+						(xy 1.27 5.08) (xy 0.8636 5.08)
 					)
 					(stroke
 						(width 0.1524)
@@ -1210,7 +1215,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 0) (xy -0.508 0)
+						(xy 1.27 2.54) (xy 0.8636 2.54)
 					)
 					(stroke
 						(width 0.1524)
@@ -1222,7 +1227,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 -2.54) (xy -0.508 -2.54)
+						(xy 1.27 0) (xy 0.8636 0)
 					)
 					(stroke
 						(width 0.1524)
@@ -1234,7 +1239,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 -5.08) (xy -0.508 -5.08)
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
 					)
 					(stroke
 						(width 0.1524)
@@ -1244,58 +1249,10 @@
 						(type none)
 					)
 				)
-				(arc
-					(start 0 4.572)
-					(mid -0.5058 5.08)
-					(end 0 5.588)
-					(stroke
-						(width 0.1524)
-						(type default)
+				(polyline
+					(pts
+						(xy 1.27 -5.08) (xy 0.8636 -5.08)
 					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 2.032)
-					(mid -0.5058 2.54)
-					(end 0 3.048)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -0.508)
-					(mid -0.5058 0)
-					(end 0 0.508)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -3.048)
-					(mid -0.5058 -2.54)
-					(end 0 -2.032)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -5.588)
-					(mid -0.5058 -5.08)
-					(end 0 -4.572)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -1305,7 +1262,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 5.08 0)
+					(at 5.08 5.08 180)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -1323,7 +1280,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 2.54 0)
+					(at 5.08 2.54 180)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -1341,7 +1298,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at 5.08 0 180)
 					(length 3.81)
 					(name "Pin_3"
 						(effects
@@ -1359,7 +1316,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -2.54 0)
+					(at 5.08 -2.54 180)
 					(length 3.81)
 					(name "Pin_4"
 						(effects
@@ -1377,7 +1334,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -5.08 0)
+					(at 5.08 -5.08 180)
 					(length 3.81)
 					(name "Pin_5"
 						(effects
@@ -1391,6 +1348,139 @@
 							(font
 								(size 1.27 1.27)
 							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "KMLib_Sensors:Atlas_EZO_Carrier_Gen2_Mount"
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files no)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "A"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Atlas_EZO_Carrier_Gen2_Mount"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "KMLib_Boards_Modules:Atlas_EZO_Carrier_Gen2_Mount"
+				(at 0 -8.89 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://files.atlas-scientific.com/electrically-isolated-ezo-carrier-board.pdf"
+				(at 0 -11.43 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Mounting for the Atlas Scientific Electrically Isolated EZO Carrier Board Gen 2 (four #4-40 standoff holes, no pins). The carrier is bought separately and connects by its own 5-wire Dupont cable to a separate 1x05 2.54 mm male header (VCC, OFF, GND, TX/SDA, RX/SCL)."
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Atlas Scientific EZO carrier isolated mounting"
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Atlas_EZO_Carrier_Gen2_Mount_0_1"
+				(rectangle
+					(start -6.35 3.81)
+					(end 6.35 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center -5.08 2.54)
+					(radius 0.635)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 5.08 2.54)
+					(radius 0.635)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -5.08 -2.54)
+					(radius 0.635)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 5.08 -2.54)
+					(radius 0.635)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "EZO carrier"
+					(at 0 0.635 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(text "mount"
+					(at 0 -1.27 0)
+					(effects
+						(font
+							(size 1.016 1.016)
 						)
 					)
 				)
@@ -2061,7 +2151,7 @@
 		)
 		(uuid "08460086-38da-4051-b79e-4444ed6897d8")
 	)
-	(text "J: socket for one Atlas Electrically Isolated EZO Carrier Board Gen 2 (isolation and the probe SMA are on the carrier).\nSW (one slider, two poles) sets the mode; U routes the carrier's TX/SDA and RX/SCL lines.\n  Position A, DIRECT:  VCC_C = +3V3, MODE = GND -> U connects TX/SDA to SDA and RX/SCL to SCL (slot bus).\n  Position C, PROXY:   VCC_C = +5V,  MODE = +5V -> U connects TX/SDA to MCU_RX and RX/SCL to MCU_TX (Nano UART).\nThe carrier pulls its TX/SDA and RX/SCL up to its own VCC (4.7k), so in either position the slot bus never meets a 5 V carrier.\nR pulls MODE up: an open pole (mid-travel, failed contact) selects the UART side and keeps the carrier off the slot bus.\nMove SW with the Slice unpowered, after setting the EZO's protocol on the bench (I2C,n for direct; Baud,n for proxy)."
+	(text "A: mount for one Atlas Electrically Isolated EZO Carrier Board Gen 2, screwed flat on its standoffs (isolation and the probe SMA are on the carrier).\nJ: header for the carrier's 5-wire Dupont cable, in the carrier header's order: VCC, OFF, GND, TX/SDA, RX/SCL.\nSW (one slider, two poles) sets the mode; U routes the carrier's TX/SDA and RX/SCL lines.\n  Position A, DIRECT:  VCC_C = +3V3, MODE = GND -> U connects TX/SDA to SDA and RX/SCL to SCL (slot bus).\n  Position C, PROXY:   VCC_C = +5V,  MODE = +5V -> U connects TX/SDA to MCU_RX and RX/SCL to MCU_TX (Nano UART).\nThe carrier pulls its TX/SDA and RX/SCL up to its own VCC (4.7k), so in either position the slot bus never meets a 5 V carrier.\nR pulls MODE up: an open pole (mid-travel, failed contact) selects the UART side and keeps the carrier off the slot bus.\nMove SW with the Slice unpowered, after setting the EZO's protocol on the bench (I2C,n for direct; Baud,n for proxy)."
 		(exclude_from_sim no)
 		(at 17.78 22.86 0)
 		(effects
@@ -2724,8 +2814,9 @@
 		)
 	)
 	(symbol
-		(lib_id "KMLib_Connectors:Hole_Mounted_Conn_01x05_Female")
+		(lib_id "Connector:Conn_01x05_Pin")
 		(at 190.5 71.12 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2735,7 +2826,7 @@
 		(dnp no)
 		(uuid "14777e96-2b56-463c-b5ef-d434db045aae")
 		(property "Reference" "J3"
-			(at 190.5 87.63 0)
+			(at 190.5 63.5 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2744,8 +2835,8 @@
 				)
 			)
 		)
-		(property "Value" "Atlas EZO carrier Gen 2"
-			(at 190.5 90.17 0)
+		(property "Value" "Conn_01x05_Pin"
+			(at 190.5 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2754,7 +2845,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KMLib_Connectors:Hole_Mounted_24mmx34mm_PinHeader_1x05_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
 			(at 190.5 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -2776,7 +2867,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Header for the carrier's 5-wire Dupont cable: VCC, OFF, GND, TX/SDA, RX/SCL"
 			(at 190.5 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -4482,6 +4573,83 @@
 				)
 				(path "/66043bca-a260-4915-9fce-8a51d324c687/a1c0e2d4-1b7f-4c2a-9e51-3d8f0a6b7c12"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "KMLib_Sensors:Atlas_EZO_Carrier_Gen2_Mount")
+		(at 233.68 71.12 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "95e02f2b-028c-48ee-929a-2d2757c78593")
+		(property "Reference" "A2"
+			(at 233.68 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Atlas_EZO_Carrier_Gen2_Mount"
+			(at 233.68 77.47 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "KMLib_Boards_Modules:Atlas_EZO_Carrier_Gen2_Mount"
+			(at 233.68 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://files.atlas-scientific.com/electrically-isolated-ezo-carrier-board.pdf"
+			(at 233.68 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mount for one Atlas Electrically Isolated EZO Carrier Board Gen 2 (four standoff holes, no pins)"
+			(at 233.68 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "BREAD_Slice"
+				(path "/66043bca-a260-4915-9fce-8a51d324c687/a1c0e2d4-1b7f-4c2a-9e51-3d8f0a6b7c11"
+					(reference "A2")
+					(unit 1)
+				)
+				(path "/66043bca-a260-4915-9fce-8a51d324c687/a1c0e2d4-1b7f-4c2a-9e51-3d8f0a6b7c12"
+					(reference "A3")
 					(unit 1)
 				)
 			)
