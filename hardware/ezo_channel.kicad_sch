@@ -5,7 +5,7 @@
 	(uuid "5c3b0a51-6f0e-4d57-9a43-2f3b6a3e1c01")
 	(paper "A4")
 	(title_block
-		(title "BREAD Slice / 1-Channel Atlas EZO Carrier / SLC_ACAR_S2L / G3 r1 11-2026")
+		(title "BREAD Slice / 1-Channel Atlas EZO Carrier / SLC_ACAR_S2L")
 		(date "2026-11")
 		(rev "G3 r1")
 		(comment 1 "EZO channel: carrier mount and cable header, mode switch, line router")

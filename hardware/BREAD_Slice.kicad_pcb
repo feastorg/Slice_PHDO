@@ -8,7 +8,7 @@
 	)
 	(paper "A4")
 	(title_block
-		(title "BREAD Slice / 1-Channel Atlas EZO Carrier / SLC_ACAR_S2L / G3 r1 11-2026")
+		(title "BREAD Slice / 1-Channel Atlas EZO Carrier / SLC_ACAR_S2L")
 		(date "2026-11")
 		(rev "G3 r1")
 	)
