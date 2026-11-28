@@ -3,15 +3,15 @@
 ## Pass 1 — CI Pipeline
 
 - [x] Pipeline added
-- [x] ERC: FAIL — 2 errors (power_pin_not_driven x2)
+- [x] ERC: PASS (0 errors)
 - [x] DRC: PASS
-- [ ] Fab: SKIPPED (blocked by ERC pre-flight)
-- [ ] gen-kibot-index: SKIPPED
-- [ ] deploy-pages: SKIPPED
+- [x] Fab: PASS
+- [ ] gen-kibot-index: skipped on pull-request runs
+- [ ] deploy-pages: skipped on pull-request runs
 
 ## Pass 2 — Pre-Fab Review
 
-- [ ] Fix 2x power_pin_not_driven ERC errors
+- [x] Fix 2x power_pin_not_driven ERC errors
 - [ ] Verify BOM completeness and sourcing
 - [ ] Confirm board outline and mounting holes
 - [ ] Footprint verification against datasheets
