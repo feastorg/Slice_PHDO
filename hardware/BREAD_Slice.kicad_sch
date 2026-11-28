@@ -4570,7 +4570,7 @@
 		)
 		(uuid "e2520e33-e44c-4055-ac71-c4a66148a86f")
 	)
-	(text "EZO channels (Nano pins per R0 2022)"
+	(text "EZO channel (Nano pins per R0 2022)"
 		(exclude_from_sim no)
 		(at 162.56 17.78 0)
 		(effects
@@ -4582,7 +4582,7 @@
 		)
 		(uuid "2bb3b36f-2942-4c40-a1b7-379f0897246a")
 	)
-	(text "3.3 V rail: direct-mode carriers, Qwiic"
+	(text "3.3 V rail: direct-mode carrier, Qwiic"
 		(exclude_from_sim no)
 		(at 74.93 17.78 0)
 		(effects
@@ -4594,7 +4594,7 @@
 		)
 		(uuid "2d6c797f-8f7d-4b78-aa1b-e9cd8697bbd0")
 	)
-	(text "ACAR: 2-channel Atlas EZO carrier. Circuit re-entered from SLC_PHDO R0 2022 (OSF zbg98).\n\nNano pin map\n  D2 E_STOP, D3 INT, D4 SYNC, A4 I2C_DAT, A5 I2C_CLK (slot bus, through R3 and JP1-JP4)\n  D5 CH1_OFF    D7 CH1_TX (Nano TX -> carrier RX)    D8 CH1_RX (carrier TX -> Nano RX)\n  D6 CH2_OFF    D9 CH2_TX (Nano TX -> carrier RX)    D10 CH2_RX (carrier TX -> Nano RX)\n  D12 LED (WS2812 DIN; the template had it on D5, which R0 2022 gives to CH1_OFF)\n\nModes, set per channel by that channel's SW\n  DIRECT (A): carrier on +3V3; TX/SDA, RX/SCL on I2C_DAT, I2C_CLK. The host talks I2C to the EZO.\n  PROXY  (C): carrier on +5V; TX/SDA, RX/SCL on the Nano UART pins. The Nano relays (firmware to come).\n\nSupplies: U1 makes +5V from +12V (Nano, D1, proxy-mode carriers, U2, U3/U4).\nU2 makes +3V3 from +5V (direct-mode carriers, Qwiic J1)."
+	(text "ACAR: 1-channel Atlas EZO carrier. Circuit re-entered from SLC_PHDO R0 2022 (OSF zbg98).\n\nNano pin map\n  D2 E_STOP, D3 INT, D4 SYNC, A4 I2C_DAT, A5 I2C_CLK (slot bus, through R3 and JP1-JP4)\n  D5 CH1_OFF    D7 CH1_TX (Nano TX -> carrier RX)    D8 CH1_RX (carrier TX -> Nano RX)\n  D6, D9, D10 free (channel 2 on the 2-channel board, SLC_ACAR_L2L)\n  D12 LED (WS2812 DIN; the template had it on D5, which R0 2022 gives to CH1_OFF)\n\nModes, set by SW on the channel sheet\n  DIRECT (A): carrier on +3V3; TX/SDA, RX/SCL on I2C_DAT, I2C_CLK. The host talks I2C to the EZO.\n  PROXY  (C): carrier on +5V; TX/SDA, RX/SCL on the Nano UART pins. The Nano relays (firmware to come).\n\nSupplies: U1 makes +5V from +12V (Nano, D1, a proxy-mode carrier, U2, U3).\nU2 makes +3V3 from +5V (a direct-mode carrier, Qwiic J1)."
 		(exclude_from_sim no)
 		(at 72.39 104.14 0)
 		(effects
@@ -4616,7 +4616,7 @@
 		)
 		(uuid "9ad3a078-b08b-48d4-af7a-6d991ff714de")
 	)
-	(text "U2 runs from +5V. Carrier load: up to 97 mA per direct-mode channel\n(carrier + EZO EC without probe at 3.3 V, the highest in the Atlas carrier\ncurrent table), plus the Qwiic device.\nTwo channels, 194 mA: (5.0 - 3.3) V x 0.194 A = 0.33 W,\nabout 36 C above ambient at 110 C/W (AP7361C datasheet, SOT-223).\nA channel in proxy mode takes nothing from U2."
+	(text "U2 runs from +5V. Carrier load: up to 97 mA in direct mode\n(carrier + EZO EC without probe at 3.3 V, the highest in the Atlas carrier\ncurrent table), plus the Qwiic device.\nOne channel, 97 mA: (5.0 - 3.3) V x 0.097 A = 0.16 W,\nabout 18 C above ambient at 110 C/W (AP7361C datasheet, SOT-223).\nIn proxy mode the carrier takes nothing from U2."
 		(exclude_from_sim no)
 		(at 74.93 55.88 0)
 		(effects
@@ -4698,6 +4698,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f2293638-643d-4ffb-a78f-1e7221caf30a")
+	)
+	(no_connect
+		(at 27.94 165.1)
+		(uuid "75de080d-6bba-48cd-8635-4cef8b820b6e")
+	)
+	(no_connect
+		(at 27.94 162.56)
+		(uuid "1015d724-a4f4-45cc-b7d4-739b98bb16f4")
+	)
+	(no_connect
+		(at 27.94 154.94)
+		(uuid "31a11a39-b393-4e40-8d34-ea36aa7817d4")
 	)
 	(no_connect
 		(at 53.34 162.56)
@@ -4838,16 +4850,6 @@
 			(type default)
 		)
 		(uuid "24442b89-214b-454b-9c0f-9fdc144e882e")
-	)
-	(wire
-		(pts
-			(xy 200.66 78.74) (xy 185.42 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2748dd1d-b491-4fc0-9f20-dbb0dcc93f0e")
 	)
 	(wire
 		(pts
@@ -5101,16 +5103,6 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 73.66) (xy 185.42 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8d2f527e-72da-40a5-8ef2-5c0707e33868")
-	)
-	(wire
-		(pts
 			(xy 40.64 180.34) (xy 40.64 181.61)
 		)
 		(stroke
@@ -5281,16 +5273,6 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 83.82) (xy 185.42 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c9d531ae-72a4-4403-8632-38da1a1fe3f9")
-	)
-	(wire
-		(pts
 			(xy 53.34 46.99) (xy 53.34 29.21)
 		)
 		(stroke
@@ -5308,16 +5290,6 @@
 			(type default)
 		)
 		(uuid "cdbd47d3-64be-4049-a372-db8f6e405d93")
-	)
-	(wire
-		(pts
-			(xy 16.51 162.56) (xy 27.94 162.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cdbd47d3-64be-4049-a372-db8f6e405d94")
 	)
 	(wire
 		(pts
@@ -5371,16 +5343,6 @@
 	)
 	(wire
 		(pts
-			(xy 16.51 154.94) (xy 27.94 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d95bafc8-f2a4-427b-9cf4-bb99f4bea974")
-	)
-	(wire
-		(pts
 			(xy 93.98 35.56) (xy 86.36 35.56)
 		)
 		(stroke
@@ -5388,16 +5350,6 @@
 			(type default)
 		)
 		(uuid "dbe53fca-fb21-47df-9ca4-95fa5a91c89b")
-	)
-	(wire
-		(pts
-			(xy 200.66 88.9) (xy 185.42 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dfdb8394-24d2-41e6-93f5-3d6883ca1c10")
 	)
 	(wire
 		(pts
@@ -5451,16 +5403,6 @@
 	)
 	(wire
 		(pts
-			(xy 16.51 165.1) (xy 27.94 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef8acd12-8b4f-4fc1-9f3f-57ebf30b94fb")
-	)
-	(wire
-		(pts
 			(xy 200.66 50.8) (xy 185.42 50.8)
 		)
 		(stroke
@@ -5498,16 +5440,6 @@
 			(type default)
 		)
 		(uuid "f4767f26-2943-45b2-b21d-ea3bf63f23d0")
-	)
-	(wire
-		(pts
-			(xy 200.66 93.98) (xy 185.42 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f5810574-8ed5-41b7-b310-b730049dd332")
 	)
 	(wire
 		(pts
@@ -5609,16 +5541,6 @@
 		)
 		(uuid "0600571f-ac3a-4b26-bfdf-57cd2c006497")
 	)
-	(label "CH2_OFF"
-		(at 185.42 73.66 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "0bb7be72-bd6d-4500-9aeb-7fa0c4169b14")
-	)
 	(label "CH1_OFF"
 		(at 185.42 30.48 180)
 		(effects
@@ -5638,16 +5560,6 @@
 			(justify left bottom)
 		)
 		(uuid "14769dc5-8525-4984-8b15-a734ee247efa")
-	)
-	(label "CH2_TX"
-		(at 185.42 78.74 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "17ec9406-39bc-4ccd-b572-df00790813e3")
 	)
 	(label "I2C_DAT"
 		(at 44.45 34.29 0)
@@ -5699,26 +5611,6 @@
 		)
 		(uuid "4067c358-4ee2-47f8-9a94-e3e8ab737390")
 	)
-	(label "I2C_CLK"
-		(at 185.42 93.98 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "40c270b0-0e89-4302-aba9-e7b823fc5ad2")
-	)
-	(label "I2C_DAT"
-		(at 185.42 88.9 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "4307c68c-4254-44a1-974f-1eedf5b0f16c")
-	)
 	(label "INT/D3"
 		(at 16.51 147.32 0)
 		(effects
@@ -5729,16 +5621,6 @@
 		)
 		(uuid "4780a290-d25c-4459-9579-eba3f7678762")
 	)
-	(label "CH2_OFF"
-		(at 16.51 154.94 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5c6e4337-15ba-4bdd-9772-19d30e7a26a0")
-	)
 	(label "SYNC/D4"
 		(at 16.51 149.86 0)
 		(effects
@@ -5748,26 +5630,6 @@
 			(justify left bottom)
 		)
 		(uuid "7d928d56-093a-4ca8-aed1-414b7e703b45")
-	)
-	(label "CH2_TX"
-		(at 16.51 162.56 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "82523e86-feac-4eb7-9c38-f519b91751db")
-	)
-	(label "CH2_RX"
-		(at 185.42 83.82 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "84ae65e9-20a6-4ac1-b2b6-4df6dff07870")
 	)
 	(label "SYNC"
 		(at 44.45 44.45 0)
@@ -5828,16 +5690,6 @@
 			(justify right bottom)
 		)
 		(uuid "df68c26a-03b5-4466-aecf-ba34b7dce6b7")
-	)
-	(label "CH2_RX"
-		(at 16.51 165.1 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e6b58de7-44ab-4cce-8087-7b6f71e1f6d2")
 	)
 	(label "LED"
 		(at 16.51 170.18 0)
@@ -9446,102 +9298,6 @@
 			)
 		)
 	)
-	(sheet
-		(at 200.66 68.58)
-		(size 38.1 30.48)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "a1c0e2d4-1b7f-4c2a-9e51-3d8f0a6b7c12")
-		(property "Sheetname" "CH2"
-			(at 200.66 67.8684 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "ezo_channel.kicad_sch"
-			(at 200.66 99.6446 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "OFF" input
-			(at 200.66 73.66 180)
-			(uuid "7d1f7157-5653-445c-8939-0aa51cf5192b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "MCU_TX" input
-			(at 200.66 78.74 180)
-			(uuid "66dfe717-c173-4339-8391-b6e2e6eacb0f")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "MCU_RX" output
-			(at 200.66 83.82 180)
-			(uuid "d6a179fa-50f9-4cd4-aff9-261aa92c0e6f")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "SDA" bidirectional
-			(at 200.66 88.9 180)
-			(uuid "7ca6e706-6498-49c0-87f3-860895bfa813")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "SCL" bidirectional
-			(at 200.66 93.98 180)
-			(uuid "a73fa0b2-6b75-496c-b87e-b8a09b27ec71")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(instances
-			(project "BREAD_Slice"
-				(path "/66043bca-a260-4915-9fce-8a51d324c687"
-					(page "3")
-				)
-			)
-		)
-	)
 	(wire
 		(pts
 			(xy 38.1 129.54) (xy 38.1 124.46)
@@ -9562,7 +9318,7 @@
 		)
 		(uuid "8b4486c5-99cb-481b-aeb5-8eea34854702")
 	)
-	(text "Slot bus links JP1-JP4: bridged solder jumpers\nbetween J2 and the Nano. Cut one to take the Nano\noff that line; U3/U4 and Qwiic J1\nstay on the J2 side. E_STOP reaches\nD2 through R3 (1k)."
+	(text "Slot bus links JP1-JP4: bridged solder jumpers\nbetween J2 and the Nano. Cut one to take the Nano\noff that line; U3 and Qwiic J1\nstay on the J2 side. E_STOP reaches\nD2 through R3 (1k)."
 		(exclude_from_sim no)
 		(at 76.2 135.89 0)
 		(effects
