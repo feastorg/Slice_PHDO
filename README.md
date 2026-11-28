@@ -14,6 +14,11 @@ no pins) and connects through the 5-wire Dupont cable it ships with, to a
 5-pin male header on the Slice (J3, J4). The header pins follow the
 carrier's own header: VCC, OFF, GND, TX/SDA, RX/SCL.
 
+Use 6 mm standoffs (#4-40 or M3), not the 11 mm ones in the Atlas kit.
+On 6 mm the carrier with its EZO stands about 18.8 mm above the Slice,
+inside the 21.6 mm the slice case leaves above the board. On 11 mm it
+would stand about 23.8 mm and hit the case roof.
+
 > **Status:** schematic only (first revision, G3 r1). The board has not
 > been laid out, built or tested.
 
