@@ -4607,7 +4607,7 @@
 	)
 	(text "Core Slice Components"
 		(exclude_from_sim no)
-		(at 16.51 17.78 0)
+		(at 16.51 16.51 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -4616,7 +4616,7 @@
 		)
 		(uuid "9ad3a078-b08b-48d4-af7a-6d991ff714de")
 	)
-	(text "U2 runs from +5V. Carrier load: up to 97 mA in direct mode\n(carrier + EZO EC without probe at 3.3 V, the highest in the Atlas carrier\ncurrent table), plus the Qwiic device.\nOne channel, 97 mA: (5.0 - 3.3) V x 0.097 A = 0.16 W,\nabout 18 C above ambient at 110 C/W (AP7361C datasheet, SOT-223).\nIn proxy mode the carrier takes nothing from U2."
+	(text "U2 runs from +5V. Carrier load: up to 97 mA in direct mode\n(carrier + EZO EC without probe at 3.3 V, the highest\nin the Atlas carrier current table), plus the Qwiic device.\nOne channel, 97 mA: (5.0 - 3.3) V x 0.097 A = 0.16 W,\nabout 18 C above ambient at 110 C/W\n(AP7361C datasheet, SOT-223).\nIn proxy mode the carrier takes nothing from U2."
 		(exclude_from_sim no)
 		(at 74.93 55.88 0)
 		(effects
@@ -4676,7 +4676,7 @@
 		(uuid "7d28f934-3533-4774-bb1e-386c4fd5079e")
 	)
 	(junction
-		(at 52.07 102.87)
+		(at 54.61 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a27b8d6b-388d-4fda-9b7c-e843567c0aa8")
@@ -4783,7 +4783,7 @@
 	)
 	(polyline
 		(pts
-			(xy 66.04 194.31) (xy 66.04 13.97)
+			(xy 68.58 194.31) (xy 68.58 12.7)
 		)
 		(stroke
 			(width 0)
@@ -4813,7 +4813,7 @@
 	)
 	(polyline
 		(pts
-			(xy 66.04 13.97) (xy 13.97 13.97)
+			(xy 68.58 12.7) (xy 13.97 12.7)
 		)
 		(stroke
 			(width 0)
@@ -4863,7 +4863,7 @@
 	)
 	(polyline
 		(pts
-			(xy 13.97 13.97) (xy 13.97 194.31)
+			(xy 13.97 12.7) (xy 13.97 194.31)
 		)
 		(stroke
 			(width 0)
@@ -4913,7 +4913,7 @@
 	)
 	(polyline
 		(pts
-			(xy 13.97 194.31) (xy 66.04 194.31)
+			(xy 13.97 194.31) (xy 68.58 194.31)
 		)
 		(stroke
 			(width 0)
@@ -4983,7 +4983,7 @@
 	)
 	(polyline
 		(pts
-			(xy 64.77 17.78) (xy 15.24 17.78)
+			(xy 67.31 17.78) (xy 15.24 17.78)
 		)
 		(stroke
 			(width 0)
@@ -5083,7 +5083,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 102.87) (xy 52.07 91.44)
+			(xy 62.23 102.87) (xy 62.23 91.44)
 		)
 		(stroke
 			(width 0)
@@ -5133,7 +5133,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 107.95) (xy 52.07 107.95)
+			(xy 41.91 107.95) (xy 54.61 107.95)
 		)
 		(stroke
 			(width 0)
@@ -5143,7 +5143,7 @@
 	)
 	(polyline
 		(pts
-			(xy 64.77 193.04) (xy 64.77 17.78)
+			(xy 67.31 193.04) (xy 67.31 17.78)
 		)
 		(stroke
 			(width 0)
@@ -5193,7 +5193,7 @@
 	)
 	(polyline
 		(pts
-			(xy 15.24 193.04) (xy 64.77 193.04)
+			(xy 15.24 193.04) (xy 67.31 193.04)
 		)
 		(stroke
 			(width 0)
@@ -5233,7 +5233,17 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 102.87) (xy 52.07 102.87)
+			(xy 54.61 102.87) (xy 62.23 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b64a2505-9945-4491-b8a8-d3a71c1bcba3")
+	)
+	(wire
+		(pts
+			(xy 41.91 102.87) (xy 54.61 102.87)
 		)
 		(stroke
 			(width 0)
@@ -6258,7 +6268,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005fcad89b")
 		(property "Reference" "A1"
-			(at 40.64 182.6006 0)
+			(at 40.64 186.69 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6268,7 +6278,7 @@
 			)
 		)
 		(property "Value" "Arduino_Nano_v3.x"
-			(at 54.61 119.38 0)
+			(at 40.64 189.23 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6912,7 +6922,7 @@
 		(fields_autoplaced yes)
 		(uuid "2652242f-bdfd-4285-8d2a-ef528f3cd86e")
 		(property "Reference" "C2"
-			(at 44.45 93.9736 0)
+			(at 44.45 93.3386 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6923,7 +6933,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 44.45 96.5136 0)
+			(at 44.45 95.8786 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7166,7 +7176,7 @@
 		(fields_autoplaced yes)
 		(uuid "32d4b980-678b-4a51-a970-9fff003bbb30")
 		(property "Reference" "C3"
-			(at 44.45 104.1336 0)
+			(at 44.45 104.5 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7343,7 +7353,7 @@
 			)
 		)
 		(property "Value" "AP63205"
-			(at 31.75 96.52 0)
+			(at 31.75 112.395 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7822,7 +7832,7 @@
 		(fields_autoplaced yes)
 		(uuid "aa9de001-57be-438d-986c-720fcbdf25a1")
 		(property "Reference" "L1"
-			(at 43.18 99.06 0)
+			(at 43.18 98.425 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7833,7 +7843,7 @@
 			)
 		)
 		(property "Value" "4.7uH Isat>=1.4A"
-			(at 43.18 101.6 0)
+			(at 43.18 100.965 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8141,7 +8151,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 52.07 91.44 0)
+		(at 62.23 91.44 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8152,7 +8162,7 @@
 		(fields_autoplaced yes)
 		(uuid "b60028a9-7041-4806-9371-125e2269331d")
 		(property "Reference" "#PWR011"
-			(at 52.07 95.25 0)
+			(at 62.23 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8163,7 +8173,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 52.07 86.36 0)
+			(at 62.23 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8173,7 +8183,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 52.07 91.44 0)
+			(at 62.23 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8184,7 +8194,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 52.07 91.44 0)
+			(at 62.23 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8195,7 +8205,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 52.07 91.44 0)
+			(at 62.23 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8302,7 +8312,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 52.07 105.41 180)
+		(at 54.61 105.41 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8313,7 +8323,7 @@
 		(fields_autoplaced yes)
 		(uuid "bd6296d5-5edf-4cf1-99fb-e05739a3220a")
 		(property "Reference" "C4"
-			(at 54.61 104.1336 0)
+			(at 57.15 104.7686 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8324,7 +8334,7 @@
 			)
 		)
 		(property "Value" "22u 10V"
-			(at 54.61 106.6736 0)
+			(at 57.15 107.3086 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8335,7 +8345,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 52.07 105.41 0)
+			(at 54.61 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8346,7 +8356,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 52.07 105.41 0)
+			(at 54.61 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8357,7 +8367,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 52.07 105.41 0)
+			(at 54.61 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8884,7 +8894,7 @@
 			)
 		)
 		(property "Value" "WS2812B_5050"
-			(at 39.37 62.23 0)
+			(at 36.195 62.23 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9230,7 +9240,7 @@
 			)
 		)
 		(property "Sheetfile" "ezo_channel.kicad_sch"
-			(at 200.66 56.4646 0)
+			(at 200.66 56.9726 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10051,7 +10061,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 160.02 147.32 0)
+			(at 160.02 146.05 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10137,7 +10147,7 @@
 		(dnp yes)
 		(uuid "de464395-9bd4-473e-9115-a2001933f0fb")
 		(property "Reference" "C14"
-			(at 142.24 162.56 0)
+			(at 142.875 162.56 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10148,7 +10158,7 @@
 			)
 		)
 		(property "Value" "47u 25V"
-			(at 142.24 165.1 0)
+			(at 142.875 165.1 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10315,7 +10325,7 @@
 		(dnp yes)
 		(uuid "3ce5c7a6-708c-4cda-b4f6-ad26f73f24a9")
 		(property "Reference" "C15"
-			(at 157.48 162.56 0)
+			(at 158.115 162.56 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10326,7 +10336,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 157.48 165.1 0)
+			(at 158.115 165.1 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

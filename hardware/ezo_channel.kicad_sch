@@ -2822,7 +2822,7 @@
 		(dnp no)
 		(uuid "14777e96-2b56-463c-b5ef-d434db045aae")
 		(property "Reference" "J3"
-			(at 190.5 63.5 0)
+			(at 190.5 62.23 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
