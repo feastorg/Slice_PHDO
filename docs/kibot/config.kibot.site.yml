@@ -1,4 +1,4 @@
-project_name: "Slice PHDO"
+project_name: "Slice ACAR S2L"
 output_dir: "Generated"
 artifacts:
   - Schematic.pdf

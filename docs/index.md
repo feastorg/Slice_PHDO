@@ -1,10 +1,10 @@
 ---
-title: "Slice PHDO Documentation"
-description: "Overview and entry page for Slice PHDO project documentation."
+title: "Slice ACAR S2L Documentation"
+description: "Overview and entry page for Slice ACAR S2L project documentation."
 nav_exclude: true
 ---
 
-Welcome to the Slice PHDO project documentation.
+Welcome to the Slice ACAR S2L (1-channel Atlas EZO carrier) project documentation.
 
 ## Board Renders
 

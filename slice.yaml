@@ -1,10 +1,10 @@
 # slice.yaml: BREAD Slice manifest, schema 2.0 (bread-infra spec/slice/slice-manifest-spec.md)
 schema_version: '2.0'
-id: slice-phdo
-name: pH and Dissolved Oxygen Atlas Sci Carrier
-summary: Carrier slice for Atlas Scientific pH and dissolved oxygen EZO modules.
+id: slice-acar-s2l
+name: 1-Channel Atlas EZO Carrier
+summary: Carries one Atlas Scientific EZO circuit on an isolated EZO carrier, read over the slot I2C bus or through the Nano's UART.
 category: sensing
-status: concept
+status: development
 hardware:
   hw_gen_current: 3
   interface: SI1
@@ -22,7 +22,10 @@ interfaces:
 metadata:
   tags:
   - water-quality
-  - ph
-  - dissolved-oxygen
   - atlas-scientific
+  - ezo
+  - ph
+  - orp
+  - dissolved-oxygen
+  - conductivity
   - aquaponics
