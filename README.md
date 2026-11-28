@@ -34,8 +34,9 @@ modified before it goes on:
    above the Slice, inside the 21.6 mm the slice case leaves above
    the board; on 11 mm it would stand about 23.8 mm and hit the roof.
 
-The Slice keeps both copper layers 3 mm clear of each A2 hole, so a
-#4-40 screw head (4.6 mm) or nut never touches its ground. The carrier's
+The Slice keeps both copper layers 4 mm clear of each A2 hole centre,
+so a #4-40 screw head (4.6 mm), a #4-40 or M3 nut, or a 1/4-in hex
+standoff (corners at 3.67 mm) never touches its ground. The carrier's
 datasheet (Atlas Scientific, Electrically Isolated EZO Carrier Board
 Gen 2, V 1.6, pages 1-2) draws its four holes with plated rings, and
 its schematic does not show which ground, isolated or not, those rings
