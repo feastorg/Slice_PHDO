@@ -2151,7 +2151,7 @@
 		)
 		(uuid "08460086-38da-4051-b79e-4444ed6897d8")
 	)
-	(text "A: mount for one Atlas Electrically Isolated EZO Carrier Board Gen 2, screwed flat on its standoffs (isolation and the probe SMA are on the carrier).\nJ: header for the carrier's 5-wire Dupont cable, in the carrier header's order: VCC, OFF, GND, TX/SDA, RX/SCL.\nSW (one slider, two poles) sets the mode; U routes the carrier's TX/SDA and RX/SCL lines.\n  Position A, DIRECT:  VCC_C = +3V3, MODE = GND -> U connects TX/SDA to SDA and RX/SCL to SCL (slot bus).\n  Position C, PROXY:   VCC_C = +5V,  MODE = +5V -> U connects TX/SDA to MCU_RX and RX/SCL to MCU_TX (Nano UART).\nThe carrier pulls its TX/SDA and RX/SCL up to its own VCC (4.7k), so in either position the slot bus never meets a 5 V carrier.\nR pulls MODE up: an open pole (mid-travel, failed contact) selects the UART side and keeps the carrier off the slot bus.\nMove SW with the Slice unpowered, after setting the EZO's protocol on the bench (I2C,n for direct; Baud,n for proxy)."
+	(text "A: mount for one Atlas Electrically Isolated EZO Carrier Board Gen 2, screwed flat on its standoffs (isolation and the probe SMA are on the carrier).\nJ: header for the carrier's 5-wire Dupont cable, in the carrier header's order: VCC, OFF, GND, TX/SDA, RX/SCL.\nSW (one slider, two poles) sets the mode; U routes the carrier's TX/SDA and RX/SCL lines.\n  Pads 1 and 6 end, silk 3V3 I2C (DIRECT):  VCC_C = +3V3, MODE = GND -> U connects TX/SDA to SDA and RX/SCL to SCL (slot bus).\n  Pads 3 and 4 end, silk 5V UART (PROXY):   VCC_C = +5V,  MODE = +5V -> U connects TX/SDA to MCU_RX and RX/SCL to MCU_TX (Nano UART).\nThe slider joins each common (2, 5) to the two throws at one end. The footprint puts pad 6 at pad 1's end and pad 4 at pad 3's end,\nso pin 6 (drawn beside pin 3) takes GND and pin 4 (drawn beside pin 1) takes +5V.\nThe carrier pulls its TX/SDA and RX/SCL up to its own VCC (4.7k), so in either position the slot bus never meets a 5 V carrier.\nR pulls MODE up: an open pole (mid-travel, failed contact) selects the UART side and keeps the carrier off the slot bus.\nMove SW with the Slice unpowered, after setting the EZO's protocol on the bench (I2C,n for direct; Baud,n for proxy)."
 		(exclude_from_sim no)
 		(at 17.78 22.86 0)
 		(effects
@@ -3085,7 +3085,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 162.56 147.32 270)
+		(at 162.56 142.24 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3095,7 +3095,7 @@
 		(dnp no)
 		(uuid "439e7fa9-987a-46bd-9805-f5d25e80dfff")
 		(property "Reference" "#PWR0307"
-			(at 162.56 147.32 90)
+			(at 162.56 142.24 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3106,7 +3106,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 165.86 147.32 90)
+			(at 165.86 142.24 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3117,7 +3117,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 162.56 147.32 0)
+			(at 162.56 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3128,7 +3128,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 162.56 147.32 0)
+			(at 162.56 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3139,7 +3139,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \\"
-			(at 162.56 147.32 0)
+			(at 162.56 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3395,7 +3395,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 162.56 142.24 90)
+		(at 162.56 147.32 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3405,7 +3405,7 @@
 		(dnp no)
 		(uuid "4c736db3-74d0-4f35-a0c2-995f40498cb3")
 		(property "Reference" "#PWR0306"
-			(at 162.56 142.24 90)
+			(at 162.56 147.32 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3416,7 +3416,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 166.86 142.24 90)
+			(at 166.86 147.32 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3427,7 +3427,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 162.56 142.24 0)
+			(at 162.56 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3438,7 +3438,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 162.56 142.24 0)
+			(at 162.56 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3449,7 +3449,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \\"
-			(at 162.56 142.24 0)
+			(at 162.56 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

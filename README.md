@@ -79,12 +79,13 @@ Until then, cut the notch above in a stock panel by hand.
 ## Modes
 
 A slide switch (SW1) with two positions sets both the carrier's supply
-and where its two data lines go.
+and where its two data lines go. Each end of SW1 is marked on the silk;
+the slider joins both commons to the two pins at one end.
 
-| Switch | Carrier supply | Carrier TX/SDA, RX/SCL go to | Who talks to the EZO |
+| SW1 end (silk) | Carrier supply | Carrier TX/SDA, RX/SCL go to | Who talks to the EZO |
 | --- | --- | --- | --- |
-| A, direct | 3.3 V | the slot bus SDA and SCL | the host (Loaf controller), over I2C |
-| C, proxy | 5 V | the Nano's UART pins | the Nano, over UART |
+| `3V3 I2C`, direct (pads 1, 6) | 3.3 V | the slot bus SDA and SCL | the host (Loaf controller), over I2C |
+| `5V UART`, proxy (pads 3, 4) | 5 V | the Nano's UART pins | the Nano, over UART |
 
 The carrier pulls its data lines up to its own supply through 4.7 kOhm. A
 carrier on the slot bus therefore always runs at 3.3 V, so it never pulls
@@ -101,7 +102,9 @@ not exist yet.
 1. On the bench, set the EZO's protocol: `I2C,n` for direct mode, or
    `Baud,n` for proxy mode (Atlas EZO datasheets).
 2. Power the Slice off.
-3. Move SW1.
+3. Move SW1 to the end marked for the mode. On a new board, check it
+   once with a meter before a carrier goes on: J3 pin 1 reads 3.3 V
+   with SW1 at the `3V3 I2C` end and 5 V at the `5V UART` end.
 
 An EZO left in UART mode on the slot bus drives SDA from its TX line and
 can hang the bus.
