@@ -30,9 +30,13 @@ modified before it goes on:
    socket row flush with the carrier's bottom (0.5 mm or less), so
    the cable housing passes under them.
 4. **Use 6 mm standoffs** (#4-40 or M3), not the 11 mm ones in the
-   Atlas kit. On 6 mm the carrier with its EZO stands about 18.8 mm
-   above the Slice, inside the 21.6 mm the slice case leaves above
-   the board; on 11 mm it would stand about 23.8 mm and hit the roof.
+   Atlas kit; the cable runs under the carrier in that gap. On 6 mm
+   the carrier with its EZO stands about 21.3 mm above the Slice
+   (6 mm standoff, 1.6 mm carrier board, 8.7 mm EZO socket, 5.0 mm of
+   EZO above the socket), against the 21.6 mm the slice case leaves
+   above the board: about 0.3 mm to spare, so check on the first
+   build that the lid closes; a taller lid is the fallback. On 11 mm
+   it would stand about 26.3 mm.
 
 The Slice keeps both copper layers 4 mm clear of each A2 hole centre,
 so a #4-40 screw head (4.6 mm), a #4-40 or M3 nut, or a 1/4-in hex
@@ -62,10 +66,12 @@ Requirement: a 5-wire female-female jumper, 2.54 mm Dupont housings,
 
 ### Probe plug and the front panel
 
-The SMA jack and the mated probe plug (about 21 mm long) stay inside
-the case, behind the sliding front panel. The probe coax turns inside
-the case on a radius of about 15 mm and leaves through a notch in the
-front panel:
+The SMA jack and the mated probe plug stay inside the case, behind the
+sliding front panel. The plug measured just over 20 mm long on the
+author's probes; the fit allows 21 mm. The probe coax turns inside the
+case on a radius of about 15 mm, a design assumption rather than a
+datasheet figure (about 5 times the 2.8 mm outside diameter of
+RG-174), and leaves through a notch in the front panel:
 
 | Notch | Slot frame | Board frame (x from the bus edge, y from the top edge) |
 | --- | --- | --- |
